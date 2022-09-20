@@ -118,7 +118,7 @@ const cleanList = () => {
       <div class="card-panel schedule white row" >
         <img src="assets/stethoscope.png" class="thumb" alt="thumb">
         <div class="schedule-details">
-          <div class="schedule-title">Data do Agendamento: ${time}</div>
+          <div class="schedule-title">Data do Agendamento: ${new Date(time).toLocaleDateString('pt-br') + " "+ new Date(time).toLocaleTimeString('pt-br')}</div>
           <div class="schedule-ingredients">Endereço: ${adress}</div>
           <div class="schedule-time">Nome da Clinica: ${name}</div>
         </div>
